@@ -1,0 +1,30 @@
+# air.toml
+
+# Specify the entry point of your application
+entry = "main.go"
+
+# Specify the directories to watch for changes
+dirs = [
+    "controllers",
+    "models",
+    "routes"
+]
+
+# Specify the file extensions to watch for changes
+exts = [
+    "go",
+    "html",
+    "css",
+    "js"
+]
+
+# Specify the environment variables to load
+env = [
+    "PORT=3000",
+    "DB_HOST=localhost",
+    "DB_PORT=5432"
+]
+
+# Specify the build and run commands
+build = "go build -o ./bin/myapp"
+run = "./bin/myapp"
